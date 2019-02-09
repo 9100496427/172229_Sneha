@@ -1,0 +1,33 @@
+package com.java;
+
+public class Author {
+static String name;
+static String email;
+static char gender;
+public Author(String mail,String email,char gender) {
+	this.name=name;
+	this.email=email;
+	this.gender=gender;
+	
+	// TODO Auto-generated constructor stub
+}
+public String getName() {
+	return name;
+}
+
+public String getEmail() {
+	return email;
+}
+public void setEmail(String email) {
+	Author.email = email;
+}
+public char getGender() {
+	return gender;
+}
+
+@Override
+public String toString() {
+	return "Authorname : "+name+ " Authoremail :  "+email+ "Authorgender : "+gender;
+}
+
+}

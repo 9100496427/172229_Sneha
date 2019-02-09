@@ -1,0 +1,62 @@
+package com.java;
+
+public class Account1 {
+private String id;
+private String name;
+private int balance=0;
+public Account1(String id, String name, int balance) {
+	super();
+	this.id = id;
+	this.name = name;
+	this.balance = balance;
+}
+public String getId() {
+	return id;
+}
+public String getName() {
+	return name;
+}
+public int getBalance() {
+	return balance;
+}
+int credit(int a1)
+{
+	balance = balance + a1;
+	System.out.println("after credited:" + balance);
+	return balance;
+	
+}
+int debit(int a2)
+{
+	if(a2 <= balance)
+	{
+		balance = balance - a2;
+		System.out.println("after debited:" + balance);
+	}
+	else
+	{
+		System.out.println("Amount exceeded balance");
+	}
+	return balance;
+}
+int transfer(int a3)
+{
+	if(a3 <= balance)
+	{
+		balance = balance - a3;
+		System.out.println("after transfer:" + balance);
+	}
+	else
+	{
+		System.out.println("Amount exceeded balance");
+	}
+	return balance;
+}
+@Override
+public String toString() {
+	return "Account1 [id=" + id + ", name=" + name + ", balance=" + balance + "]";
+}
+
+
+
+}

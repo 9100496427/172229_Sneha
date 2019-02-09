@@ -1,0 +1,34 @@
+package com.java;
+
+public class Customer {
+static int cusid;
+static String cusname;
+static char cusgender;
+static int discount;
+public Customer(int cusid, String cusname, char cusgender, int discount) {
+	super();
+	this.cusid = cusid;
+	this.cusname = cusname;
+	this.cusgender = cusgender;
+	this.discount = discount;
+}
+public int getCusid() {
+	return cusid;
+}
+public String getCusname() {
+	return cusname;
+}
+public char getCusgender() {
+	return cusgender;
+}
+public int getDiscount() {
+	return discount;
+}
+@Override
+public String toString() {
+	return "Customer [cusname=" + cusname + "]";
+}
+
+
+	
+}

@@ -1,0 +1,38 @@
+package com.java;
+
+public class Book extends Author {
+private String bname;
+private double price;
+private int qty=0;
+public Book(String bname) {
+	super(bname, email, gender);
+	this.bname=bname;
+	
+	// TODO Auto-generated constructor stub
+}
+public String getBname() {
+	return bname;
+}
+public void setBname(String bname) {
+	this.bname = bname;
+}
+public double getPrice() {
+	return price;
+}
+public void setPrice(double price) {
+	this.price = price;
+}
+public int getQty() {
+	return qty;
+}
+public void setQty(int qty) {
+	this.qty = qty;
+}
+@Override
+public String toString() {
+	return "Book [bname=" + bname + ", price=" + price + ", qty=" + qty + "]";
+}
+
+
+}
+

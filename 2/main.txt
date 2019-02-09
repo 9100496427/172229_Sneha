@@ -1,0 +1,13 @@
+package com.java;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Author a= new Author("sneha","sweetysneha28197@gmail.com",'F');
+System.out.println(a);
+Book b=new Book("half girlfriend");
+System.out.println(b);
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.java;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Person1 p = new Person1("sneha","dsnr");
+		Student s=new Student(p.getName(),p.getAddress());
+		Teacher t=new Teacher(p.getName(),p.getAddress());
+
+		s.addCourseGrade("java", 78);
+		s.addCourseGrade("python", 88);
+		s.addCourseGrade(".net", 56);
+		s.addCourseGrade("oracle", 98);
+		
+		s.printGrades();
+		System.out.println("Average of all grade is "+s.getAverageGrade());
+}
+}

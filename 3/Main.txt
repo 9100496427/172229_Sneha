@@ -1,0 +1,18 @@
+package com.java;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Customer c=new Customer(1,"sneha",'F',20);
+		System.out.println(c);
+		Account2 a=new Account2();
+		a.setBalance(890.367788);
+		a.credit(2000.3789);
+		System.out.println(a);
+		a.withdraw(899.2898);
+		System.out.println(a);
+
+	}
+
+}

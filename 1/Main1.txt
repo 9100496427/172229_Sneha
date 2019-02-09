@@ -1,0 +1,22 @@
+package com.java;
+
+public class Main1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//import java.util.Scanner;
+
+		
+				// TODO Auto-generated method stub
+				//Scanner t = new Scanner(System.in);
+				Account1 ac=new Account1("1","sneha",9000);
+				ac.credit(3000);
+				ac.debit(2000);
+				ac.transfer(3000);
+				
+				System.out.println(ac);
+			}
+
+		}
+
+	
